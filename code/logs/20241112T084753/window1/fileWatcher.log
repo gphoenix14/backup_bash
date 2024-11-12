@@ -1,1 +1,2 @@
 2024-11-12 10:13:41.353 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-12 10:42:34.286 [warning] [File Watcher ('parcel')] started ignoring events due to too many file change events at once (incoming: 39087, most recent change: /home/kali/scripting/esercizio2/backup/backup_diff_20241112/.xhh.UKQoJy). Use 'files.watcherExclude' setting to exclude folders with lots of changing files (e.g. compilation output).

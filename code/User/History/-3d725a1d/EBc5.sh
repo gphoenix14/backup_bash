@@ -17,7 +17,7 @@ fi
 read -p "Vuoi fare un backup completo o differenziale? (completo/differenziale): " BACKUP_TYPE
 
 # Chiedere se comprimere il backup
-read -p "Vuoi comprimere i file? (si/no): " COMPRESS
+read -p "Vuoi comprimere i file? (sì/no): " COMPRESS
 
 # Creare la cartella di destinazione se non esiste
 mkdir -p "$DEST_DIR"
@@ -44,7 +44,7 @@ else
 fi
 
 # Comprimere il backup se richiesto
-if [[ "$COMPRESS" == "si" ]]; then
+if [[ "$COMPRESS" == "sì" ]]; then
     echo "Compressione del backup in corso..."
     tar -czvf "${BACKUP_PATH}.tar.gz" -C "$DEST_DIR" "$BACKUP_NAME"
     rm -rf "$BACKUP_PATH"

@@ -26,3 +26,4 @@
     at Vi (file:///usr/share/code/resources/app/out/main.js:38:26126)
     at Uy.y (file:///usr/share/code/resources/app/out/main.js:49:26885)
 2024-11-12 10:13:41.341 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-12 10:42:34.287 [warning] [File Watcher ('parcel')] started ignoring events due to too many file change events at once (incoming: 39087, most recent change: /home/kali/scripting/esercizio2/backup/backup_diff_20241112/.xhh.UKQoJy). Use 'files.watcherExclude' setting to exclude folders with lots of changing files (e.g. compilation output).
