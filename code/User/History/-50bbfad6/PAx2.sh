@@ -1,4 +1,3 @@
-file:///home/kali/scripting/esercizio%20sul%20networking/speedtest.sh {"mtime":1731490754668,"ctime":1731490185984,"size":1526,"etag":"3dar1fjf51i7","orphaned":false,"typeId":""}
 #!/bin/bash
 
 #Verifica se è stata passata un'interfaccia di rete come argomento
