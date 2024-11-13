@@ -25,7 +25,7 @@ if [[ "$BACKUP_TYPE" == "completo" ]]; then
     BACKUP_PATH="${dest_folder_full}/${BACKUP_NAME}"
 
     echo "Esecuzione del backup completo..."
-    rsync -av --progress "$source/" "$BACKUP_PATH/"
+    cp -r "$source" "$BACKUP_PATH"
 
 # Backup differenziale
 elif [[ "$BACKUP_TYPE" == "differenziale" ]]; then
@@ -41,11 +41,31 @@ elif [[ "$BACKUP_TYPE" == "differenziale" ]]; then
     fi
 
     echo "Esecuzione del backup differenziale confrontando con $LAST_FULL_BACKUP..."
-    rsync -av --progress --link-dest="$LAST_FULL_BACKUP" "$source/" "$BACKUP_PATH/"
+    rsync -av --progress --compare-dest="$LAST_FULL_BACKUP" "$source/" "$BACKUP_PATH/"
 
 else
     echo "Errore: Scelta del backup non valida."
     exit 1
+fi
+
+# Compressione del backup
+if [[ "$useTAR" == "true" ]]; then
+    echo "Compressione con tar..."
+    tar -cvf "${BACKUP_PATH}.tar" -C "$(dirname "$BACKUP_PATH")" "$(basename "$BACKUP_PATH")"
+    rm -rf "$BACKUP_PATH"
+    BACKUP_PATH="${BACKUP_PATH}.tar"
+fi
+
+if [[ "$useXZ" == "true" ]]; then
+    echo "Compressione con xz..."
+    xz -z "${BACKUP_PATH}"
+    BACKUP_PATH="${BACKUP_PATH}.xz"
+fi
+
+if [[ "$useGZIP" == "true" ]]; then
+    echo "Compressione con gzip..."
+    gzip "${BACKUP_PATH}"
+    BACKUP_PATH="${BACKUP_PATH}.gz"
 fi
 
 # Messaggio di completamento

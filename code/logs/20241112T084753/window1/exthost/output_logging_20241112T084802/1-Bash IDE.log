@@ -999,3 +999,4 @@
 [Warn  - 9:57:15 AM] 14:57:15.131 WARNING ⛔️ Error while parsing file:///home/kali/scripting/example/backup.sh: syntax error
 [Warn  - 9:57:15 AM] 14:57:15.544 WARNING ⛔️ Error while parsing file:///home/kali/scripting/example/backup.sh: syntax error
 [Warn  - 9:57:47 AM] 14:57:47.409 WARNING ⛔️ Error while parsing file:///home/kali/scripting/example/backup.sh: syntax error
+[Warn  - 3:04:01 AM] 08:04:01.968 WARNING ⛔️ file:///home/kali/scripting/esercizio2/backup.sh line 3: failed to resolve path
