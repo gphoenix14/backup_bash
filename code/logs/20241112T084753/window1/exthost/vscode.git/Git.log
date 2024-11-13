@@ -508,3 +508,17 @@ Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 2024-11-13 03:07:03.787 [info] > git show --textconv :esercizio2/backup.sh [6ms]
 2024-11-13 03:07:03.788 [info] > git ls-files --stage -- /home/kali/scripting/esercizio2/backup.sh [2ms]
 2024-11-13 03:07:03.793 [info] > git cat-file -s f47096f87eb6305bf3acbb441a955dc7fb81b24a [1ms]
+2024-11-13 03:07:59.146 [info] > git ls-files --stage -- /home/kali/scripting/esercizio2/backup.sh [2ms]
+2024-11-13 03:07:59.150 [info] > git cat-file -s 3370fc8b775074e87d762c2714656e51ebe55104 [1ms]
+2024-11-13 03:07:59.158 [info] > git show --textconv :esercizio2/backup.sh [1ms]
+2024-11-13 03:08:02.800 [info] > git ls-files --stage -- /home/kali/scripting/esercizio2/backup.sh [1ms]
+2024-11-13 03:08:02.804 [info] > git cat-file -s 3370fc8b775074e87d762c2714656e51ebe55104 [1ms]
+2024-11-13 03:08:02.811 [info] > git show --textconv :esercizio2/backup.sh [2ms]
+2024-11-13 03:08:05.443 [info] > git ls-files --stage -- /home/kali/scripting/esercizio2/backup.sh [0ms]
+2024-11-13 03:08:05.449 [info] > git cat-file -s 3370fc8b775074e87d762c2714656e51ebe55104 [1ms]
+2024-11-13 03:08:05.457 [info] > git show --textconv :esercizio2/backup.sh [1ms]
+2024-11-13 03:08:14.546 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/home/kali/scripting/script per backup/.git/HEAD'
+2024-11-13 03:08:14.559 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/kali/scripting/script per backup/.git/config'
+2024-11-13 03:08:14.572 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/home/kali/scripting/script per backup/.git/HEAD'
+2024-11-13 03:08:14.580 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/kali/scripting/script per backup/.git/config'
+2024-11-13 03:08:15.171 [info] > git check-ignore -v -z --stdin [1ms]
